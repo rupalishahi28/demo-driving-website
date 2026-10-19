@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Driving Lessons in South East Dublin | ROAD Driving School</title>
+<meta name="description" content="EDT driving lessons, pre-tests and test car hire in Dún Laoghaire and South East Dublin. RSA-approved instructor. Book your lessons with ROAD Driving School.">
+<link rel="canonical" href="https://www.roaddrivingschool.ie/">
+<!-- Keep this: it is your existing Google Search Console verification -->
+<meta name="google-site-verification" content="fSv2gz2Qn30XSw-1BTZuUxc03-ARlBhPmVWB04maXbQ">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F141A" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ROAD Driving School">
+<meta property="og:title" content="Driving Lessons in South East Dublin | ROAD Driving School">
+<meta property="og:description" content="EDT lessons, pre-tests and test car hire in Dún Laoghaire and South East Dublin.">
+<meta property="og:url" content="https://www.roaddrivingschool.ie/">
+<meta property="og:image" content="https://www.roaddrivingschool.ie/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "@id": "https://www.roaddrivingschool.ie/#school",
+  "name": "ROAD Driving School",
+  "url": "https://www.roaddrivingschool.ie/",
+  "telephone": "+353892384321",
+  "email": "hello@roaddrivingschool.ie",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Pottery Road",
+    "addressLocality": "Dún Laoghaire",
+    "addressRegion": "County Dublin",
+    "addressCountry": "IE"
+  },
+  "areaServed": "South East Dublin",
+  "sameAs": [
+    "https://www.instagram.com/roaddrivingschool/",
+    "https://www.facebook.com/ROADDublin/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Driving lessons and test preparation",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full EDT course (12 lessons)"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reduced EDT course (6 lessons)"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pay as you go EDT lesson"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sponsored EDT course (20 lessons)"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pre-test lessons (1, 2 or 3 hours)"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Driving test car hire"}}
+    ]
+  }
+}
+</script>
+
+<style>
+/* ================= Design tokens ================= */
+:root {
+  --bg: #FFFFFF;
+  --bg-alt: #F3F5F4;
+  --surface: #FFFFFF;
+  --text: #1C2430;
+  --muted: #5E6875;
+  --line: #E2E6E4;
+  --accent: #D7262E;          /* L-plate red, used sparingly */
+  --go: #1F8A4C;
+  --amber: #E89A00;
+  --focus: #0B63CE;
+
+  --sky-top: #DCEBF3;
+  --sky-bottom: #FFFFFF;
+  --hill-far: #CFE0CB;
+  --hill-mid: #B4D0AA;
+  --hill-near: #9CC290;
+  --verge: #8FAE84;
+  --road: #4A515A;
+  --marking: #FFFFFF;
+  --car: #F1EDE3;
+  --car-shade: #D8D1C2;
+  --sun: #FFD58A;
+
+  --font: "Manrope", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --fs-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --fs-body: clamp(1.0625rem, 1rem + 0.2vw, 1.1875rem);
+  --fs-lead: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+  --fs-h3: clamp(1.3rem, 1.15rem + 0.5vw, 1.6rem);
+  --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+  --fs-hero: clamp(2.7rem, 1.4rem + 5.6vw, 5.75rem);
+
+  --wrap: 72rem;
+  --radius: 22px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0F141A; --bg-alt: #161D25; --surface: #1A222C; --text: #EEF1F4; --muted: #9AA5B1;
+    --line: #26303A; --accent: #FF5A5F; --focus: #7DB4FF;
+    --sky-top: #0B1622; --sky-bottom: #0F141A; --hill-far: #1D2E2A; --hill-mid: #213A30;
+    --hill-near: #264434; --verge: #2F4A3A; --road: #2C333C; --marking: #DDE3E8;
+    --car: #E7E1D4; --car-shade: #B9B1A1; --sun: #F3E7C4;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0F141A; --bg-alt: #161D25; --surface: #1A222C; --text: #EEF1F4; --muted: #9AA5B1;
+  --line: #26303A; --accent: #FF5A5F; --focus: #7DB4FF;
+  --sky-top: #0B1622; --sky-bottom: #0F141A; --hill-far: #1D2E2A; --hill-mid: #213A30;
+  --hill-near: #264434; --verge: #2F4A3A; --road: #2C333C; --marking: #DDE3E8;
+  --car: #E7E1D4; --car-shade: #B9B1A1; --sun: #F3E7C4;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.5rem); }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: var(--font); font-size: var(--fs-body); line-height: 1.6; font-weight: 400;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); letter-spacing: -0.015em; line-height: 1.2; font-weight: 600; }
+p { margin: 0; max-width: 62ch; }
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+.section { padding-block: clamp(4.5rem, 3rem + 7vw, 9rem); }
+.alt { background: var(--bg-alt); }
+.center { text-align: center; }
+.center p { margin-inline: auto; }
+.head { display: grid; gap: 1rem; margin-bottom: clamp(2.5rem, 2rem + 2vw, 4rem); }
+.head p { color: var(--muted); font-size: var(--fs-lead); }
+.skip { position: absolute; left: -999px; top: 0; background: var(--surface); padding: 0.75rem 1rem; z-index: 100; border-radius: 8px; }
+.skip:focus { left: 1rem; top: 1rem; }
+
+/* Reveal on scroll (only when JS runs and motion is allowed) */
+.motion .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.motion .reveal.in { opacity: 1; transform: none; }
+
+/* ================= Buttons ================= */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 48px; padding: .75rem 1.5rem; border-radius: 999px; border: 1.5px solid transparent;
+  font: 600 1rem/1 var(--font); text-decoration: none; cursor: pointer;
+  transition: transform .2s var(--ease), background-color .2s, color .2s;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary { background: var(--text); color: var(--bg); }
+.btn-primary:hover { background: color-mix(in srgb, var(--text) 85%, var(--bg)); }
+.btn-quiet { border-color: var(--line); color: var(--text); background: transparent; }
+.btn-quiet:hover { border-color: var(--text); }
+.link { color: var(--accent); font-weight: 600; text-decoration: none; }
+.link:hover { text-decoration: underline; text-underline-offset: .25em; }
+
+/* ================= Header ================= */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 41;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px);
+}
+.header-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.75rem; }
+.brand { white-space: nowrap; display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 700; letter-spacing: -0.02em; }
+.lplate {
+  display: inline-grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 5px;
+  background: #fff; color: #D7262E; font-weight: 700; font-size: 1.15rem; line-height: 1;
+  box-shadow: inset 0 0 0 1.5px #D7262E;
+}
+.nav ul { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
+.nav a { white-space: nowrap; text-decoration: none; font-size: var(--fs-small); font-weight: 500; color: var(--muted); transition: color .2s; }
+.nav a:hover { color: var(--text); }
+.header-cta { padding: .55rem 1.1rem; min-height: 38px; font-size: var(--fs-small); }
+.menu-toggle { display: none; background: none; border: 0; color: var(--text); font: 600 1rem var(--font); padding: .5rem; cursor: pointer; }
+@media (max-width: 64rem) {
+  .menu-toggle { display: inline-block; }
+  .header-cta { display: none; }
+  .nav { position: absolute; inset: 100% 0 auto; background: var(--bg); border-bottom: 1px solid var(--line);
+         padding: .5rem 1.25rem 1.25rem; display: none; }
+  .nav.open { display: block; }
+  .nav ul { flex-direction: column; gap: 0; }
+  .nav a { display: block; padding: .9rem 0; font-size: 1.15rem; color: var(--text); border-bottom: 1px solid var(--line); }
+}
+
+/* ================= Hero: headline in the sky, road below ================= */
+.hero {
+  position: relative; overflow: hidden; text-align: center;
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--sky-top) 55%, var(--sky-top) 82%, var(--bg-alt) 100%);
+}
+.hero-copy { position: relative; z-index: 2; padding-top: clamp(2rem, 1rem + 3.5vw, 4rem); }
+.hero h1 { font-size: clamp(2.4rem, 1.2rem + 4vw, 4.5rem); letter-spacing: -0.04em; line-height: 1.04; max-width: 22ch; margin-inline: auto; }
+.word { display: inline-block; transition: opacity .7s var(--ease); }
+.cycling .word { opacity: .22; }
+.cycling .word.on { opacity: 1; }
+.hero-desc { font-size: var(--fs-lead); font-weight: 500; margin: 1rem auto 0; max-width: 32ch; min-height: 2.9em; transition: opacity .35s ease; }
+.hero-desc.swap { opacity: 0; }
+.hero-lead { color: var(--muted); font-size: var(--fs-small); margin: .5rem auto 0; max-width: 40ch; }
+.hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1.5rem; }
+.motion .hero .word, .motion .hero-desc, .motion .hero-lead, .motion .hero-actions { animation: rise 1s var(--ease) backwards; }
+.motion .hero .word:nth-child(2) { animation-delay: .1s; }
+.motion .hero .word:nth-child(3) { animation-delay: .2s; }
+.motion .hero .word:nth-child(4) { animation-delay: .3s; }
+.motion .hero-desc { animation-delay: .45s; }
+.motion .hero-lead, .motion .hero-actions { animation-delay: .55s; }
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } }
+
+.scene {
+  position: relative; z-index: 1; display: block; width: 100%; height: clamp(340px, 40vw, 580px); margin-top: clamp(-1rem, 2vw, 2rem);
+  -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+}
+.motion .scene #roadGroup { animation: unroll 1.6s var(--ease) .35s both; }
+@keyframes unroll { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+.motion .scene #car { opacity: 0; animation: fadein .6s ease 1.4s forwards; }
+@keyframes fadein { to { opacity: 1; } }
+
+/* ================= Package finder ================= */
+.finder { max-width: 52rem; margin-inline: auto; display: grid; gap: 2rem; }
+.finder fieldset { border: 0; padding: 0; margin: 0; }
+.finder legend { font-weight: 600; font-size: var(--fs-h3); letter-spacing: -0.015em; margin: 0 auto 1.25rem; text-align: center; }
+.choices { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.choice { position: relative; }
+.choice input { position: absolute; opacity: 0; pointer-events: none; }
+.choice span {
+  display: block; height: 100%; padding: 1.1rem 1.25rem; border-radius: 16px; cursor: pointer;
+  background: var(--surface); border: 1.5px solid var(--line); font-weight: 500;
+  transition: border-color .25s, box-shadow .25s, transform .25s var(--ease);
+}
+.choice span:hover { border-color: color-mix(in srgb, var(--text) 40%, var(--line)); }
+.choice input:checked + span { border-color: var(--text); box-shadow: 0 0 0 1px var(--text); }
+.choice input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+.test-q { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease); }
+.test-q.show { grid-template-rows: 1fr; }
+.test-q > div { overflow: hidden; }
+.result {
+  text-align: center; display: grid; gap: .75rem; justify-items: center; padding: 2.5rem 1.5rem;
+  background: var(--surface); border-radius: var(--radius); border: 1.5px solid var(--line);
+  transition: opacity .5s var(--ease), transform .5s var(--ease);
+}
+.result.waiting { opacity: .45; }
+.result .kicker { color: var(--accent); font-weight: 600; font-size: var(--fs-small); }
+.result h3 { font-size: var(--fs-h2); letter-spacing: -0.03em; font-weight: 700; line-height: 1.05; }
+.result p { color: var(--muted); }
+
+/* ================= Packages ================= */
+.segmented {
+  display: inline-flex; gap: .25rem; padding: .3rem; border-radius: 999px; background: var(--bg-alt);
+  border: 1px solid var(--line); margin: 0 auto 2.5rem; max-width: 100%; overflow-x: auto;
+}
+.alt .segmented { background: var(--bg); }
+.seg-wrap { text-align: center; }
+.tab {
+  border: 0; background: transparent; color: var(--muted); font: 600 var(--fs-small) var(--font);
+  padding: .65rem 1.2rem; border-radius: 999px; cursor: pointer; white-space: nowrap; transition: background-color .3s, color .3s;
+}
+.tab[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(20,30,40,.12); }
+.panel[hidden] { display: none; }
+.motion .panel:not([hidden]) .pkg { animation: rise .6s var(--ease) both; }
+.motion .panel:not([hidden]) .pkg:nth-child(2) { animation-delay: .06s; }
+.motion .panel:not([hidden]) .pkg:nth-child(3) { animation-delay: .12s; }
+.motion .panel:not([hidden]) .pkg:nth-child(4) { animation-delay: .18s; }
+.packages { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15.5rem), 1fr)); }
+.pkg {
+  background: var(--bg-alt); border-radius: var(--radius); padding: 2rem 1.75rem 1.75rem;
+  display: flex; flex-direction: column; gap: .6rem; min-height: 17rem;
+}
+.pkg .size { font-size: clamp(3.25rem, 2.6rem + 2vw, 4.25rem); font-weight: 700; letter-spacing: -0.05em; line-height: 1; }
+.pkg .size small { font-size: .4em; letter-spacing: 0; font-weight: 600; color: var(--muted); margin-left: .15em; }
+.pkg p { color: var(--muted); }
+.pkg ul { margin: .25rem 0 0; padding: 0; list-style: none; color: var(--muted); display: grid; gap: .3rem; font-size: var(--fs-small); }
+.pkg ul li::before { content: "✓"; color: var(--go); font-weight: 700; margin-right: .5rem; }
+.pkg .link { margin-top: auto; padding-top: .75rem; }
+.light { display: inline-block; width: 14px; height: 14px; border-radius: 50%; margin-right: .5rem; vertical-align: .05em; }
+.light.green { background: var(--go); } .light.orange { background: var(--amber); } .light.red { background: #D7262E; }
+.note { margin: 2rem auto 0; color: var(--muted); text-align: center; }
+
+/* ================= Route to test ================= */
+.route { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; position: relative; }
+.route li { display: grid; grid-template-columns: 2.75rem 1fr; gap: 1.25rem; padding-bottom: 2.25rem; position: relative; }
+.route li::after {
+  content: ""; position: absolute; left: calc(1.375rem - 1px); top: 2.75rem; bottom: 0; width: 2px;
+  background: linear-gradient(var(--text), var(--text)) top / 2px 0% no-repeat, var(--line);
+  transition: background-size 1s var(--ease);
+}
+.route li:last-child::after { display: none; }
+.route li.in::after { background-size: 2px 100%; }
+.route .dot {
+  width: 2.75rem; height: 2.75rem; border-radius: 50%; display: grid; place-items: center;
+  border: 2px solid var(--line); background: var(--bg); font-weight: 700; color: var(--muted);
+  transition: background-color .5s, color .5s, border-color .5s; position: relative; z-index: 1;
+}
+.route li.in .dot { background: var(--text); color: var(--bg); border-color: var(--text); }
+.route h3 { padding-top: .45rem; }
+.route p { color: var(--muted); margin-top: .3rem; }
+@media (min-width: 62rem) {
+  .route { grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+  .route li { grid-template-columns: 1fr; padding-bottom: 0; }
+  .route li::after {
+    left: 3.25rem; right: -1.25rem; top: calc(1.375rem - 1px); bottom: auto; width: auto; height: 2px;
+    background: linear-gradient(90deg, var(--text), var(--text)) left / 0% 2px no-repeat, var(--line);
+  }
+  .route li.in::after { background-size: 100% 2px; }
+  .route h3 { padding-top: .75rem; }
+}
+
+/* ================= Contact ================= */
+.split { display: grid; gap: clamp(2.5rem, 2rem + 4vw, 6rem); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); align-items: start; }
+.contact-head { display: grid; gap: 1rem; }
+.contact-head p { color: var(--muted); font-size: var(--fs-lead); }
+.details { display: grid; gap: 1.25rem; margin: 2.5rem 0 0; }
+.details dt { font-size: var(--fs-small); color: var(--muted); }
+.details dd { margin: .1rem 0 0; font-weight: 600; }
+.details a { text-decoration: none; }
+.details a:hover { text-decoration: underline; text-underline-offset: .25em; }
+
+form.enquiry { background: var(--surface); border-radius: var(--radius); padding: clamp(1.5rem, 1rem + 2vw, 2.75rem); display: grid; gap: 1.25rem; border: 1px solid var(--line); }
+.field { display: grid; gap: .4rem; }
+.field label, .field legend { font-weight: 600; font-size: var(--fs-small); }
+.hint { color: var(--muted); font-weight: 400; }
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+  width: 100%; min-height: 50px; padding: .75rem 1rem; border: 1.5px solid var(--line); border-radius: 12px;
+  background: var(--bg); color: var(--text); font: 400 1rem var(--font); transition: border-color .2s;
+}
+textarea { min-height: 7rem; resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { border-color: var(--focus); outline: 0; box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 25%, transparent); }
+fieldset.field { border: 0; padding: 0; margin: 0; }
+.radio-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+.radio-row .choice span { padding: .7rem 1.1rem; border-radius: 999px; }
+.consent { display: flex; gap: .7rem; align-items: start; font-size: var(--fs-small); color: var(--muted); }
+.consent input { width: 1.2rem; height: 1.2rem; margin-top: .2rem; accent-color: var(--text); flex: none; }
+.error { color: var(--accent); font-size: var(--fs-small); font-weight: 600; }
+.error:empty { display: none; }
+.hp { position: absolute; left: -9999px; }
+.form-status { padding: 1rem 1.25rem; border-radius: 12px; font-weight: 600; }
+.form-status.ok { background: color-mix(in srgb, var(--go) 14%, transparent); }
+.form-status.fail { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+form.enquiry .btn { justify-self: start; }
+
+/* ================= Footer + mobile bar ================= */
+.site-footer { border-top: 1px solid var(--line); padding-block: 3rem calc(3rem + 5rem); font-size: var(--fs-small); color: var(--muted); }
+.site-footer .wrap { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+.site-footer strong { color: var(--text); font-weight: 600; display: block; margin-bottom: .5rem; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .45rem; }
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { color: var(--text); }
+.mobile-bar {
+  position: fixed; left: max(.75rem, env(safe-area-inset-left, 0px)); right: max(.75rem, env(safe-area-inset-right, 0px)); bottom: calc(.75rem + env(safe-area-inset-bottom, 0px)); z-index: 30; max-width: 32rem; margin-inline: auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .5rem; border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(20,30,40,.12);
+}
+.mobile-bar .btn { min-height: 48px; }
+.mobile-bar .wa { background: var(--go); color: #fff; }
+@media (min-width: 64rem) { .mobile-bar { display: none; } .site-footer { padding-bottom: 3rem; } }
+
+/* ================= Responsive: phones, incl. iPhone 17 Pro (402 x 874 pt) ================= */
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { -webkit-tap-highlight-color: transparent; }
+:root { --gutter-l: max(1.25rem, env(safe-area-inset-left, 0px)); --gutter-r: max(1.25rem, env(safe-area-inset-right, 0px)); }
+.wrap { width: min(100% - var(--gutter-l) - var(--gutter-r), var(--wrap)); }
+.finder .test-q:not(.show) { margin-top: -2rem; }
+@media (hover: none) {
+  .choice span:hover { border-color: var(--line); }
+  .btn-quiet:hover { border-color: var(--line); }
+}
+
+@media (max-width: 40rem) {
+  .section { padding-block: 4rem; }
+  .head { margin-bottom: 2rem; }
+  .hero-actions .btn { min-width: 15rem; }
+  /* Packages become a swipeable row instead of a long stack */
+  .packages {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 80%;
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter-l)) calc(-1 * var(--gutter-r));
+    padding: .25rem var(--gutter-r) 1rem var(--gutter-l); scroll-padding-inline: var(--gutter-l);
+    scrollbar-width: none;
+  }
+  .packages::-webkit-scrollbar { display: none; }
+  .pkg { scroll-snap-align: start; min-height: 0; padding: 1.75rem 1.5rem 1.5rem; }
+  .panel .swipe-hint { display: block; }
+  /* Contact details in two columns */
+  .details { grid-template-columns: 1fr 1fr; gap: 1.25rem 1rem; margin-top: 2rem; }
+  .details > div:first-child, .details > div:nth-child(4) { grid-column: 1 / -1; }
+  .result { padding: 2rem 1.25rem; }
+}
+.swipe-hint { display: none; text-align: center; color: var(--muted); font-size: var(--fs-small); margin-top: .25rem; }
+
+/* Phones in landscape: short screens */
+@media (orientation: landscape) and (max-height: 500px) {
+  .site-header .header-row { min-height: 3.25rem; }
+  .hero-copy { padding-top: 1.5rem; }
+  .hero h1 { font-size: clamp(2rem, 1rem + 3.2vw, 2.75rem); }
+  .hero-desc { font-size: 1.05rem; margin-top: .6rem; min-height: 0; }
+  .hero-lead { display: none; }
+  .hero-actions { margin-top: 1rem; }
+  .hero-actions .btn { min-height: 44px; }
+  .scene { height: 300px; }
+  .mobile-bar { left: auto; margin: 0; width: 17rem; padding: .35rem; }
+  .mobile-bar .btn { min-height: 40px; font-size: .9375rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+<script>
+  // Turn on motion only when JS runs and the visitor hasn't asked for reduced motion
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+</script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/" aria-label="ROAD Driving School home">
+      <span class="lplate" aria-hidden="true">L</span>
+      <span>ROAD Driving School</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/driving-lessons">Lessons</a></li>
+        <li><a href="/pre-test-lessons">Pre-tests</a></li>
+        <li><a href="/test-car-hire">Test car hire</a></li>
+        <li><a href="/locations">Locations</a></li>
+        <li><a href="/gift-vouchers">Vouchers</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary header-cta" href="#contact">Book a lesson</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-copy">
+      <h1 id="hero-title"><span class="word">Reliable.</span> <span class="word">Organised.</span> <span class="word">Affordable.</span> <span class="word">Driving.</span></h1>
+      <p class="hero-desc" id="hero-desc">Full support from your first lesson to your last, in a safe and professional car.</p>
+      <p class="hero-lead">EDT lessons, pre-tests and test car hire in Dún Laoghaire and South East Dublin.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#finder">Find your package</a>
+        <a class="btn btn-quiet" href="tel:+353892384321">Call 089 238 4321</a>
+      </div>
+    </div>
+    <svg class="scene" viewBox="0 175 1200 465" preserveAspectRatio="xMidYMin slice" role="img" aria-label="Illustration of a learner car with an L-plate driving along a winding road through green hills">
+      <circle cx="905" cy="232" r="48" fill="var(--sun)" opacity=".9"/>
+      <path fill="var(--hill-far)" d="M0 250 C 150 190 300 205 430 228 C 560 250 650 185 790 190 C 930 195 1050 240 1200 215 L1200 640 L0 640 Z"/>
+      <path fill="var(--hill-mid)" d="M0 300 C 180 255 340 280 520 300 C 700 320 860 262 1020 268 C 1100 271 1160 285 1200 290 L1200 640 L0 640 Z"/>
+      <path fill="var(--hill-near)" d="M0 390 C 220 350 400 380 560 420 C 760 470 980 380 1200 400 L1200 640 L0 640 Z"/>
+      <g id="roadGroup">
+        <path id="verge" fill="var(--verge)" opacity=".55"/>
+        <path id="roadSurface" fill="var(--road)"/>
+        <path id="roadDashes" fill="var(--marking)"/>
+        <!-- Centre line the road is built around; hidden once JS draws the road -->
+        <path id="centre" d="M610 690 C 600 600 790 530 680 420 C 600 350 655 290 628 222" fill="none" stroke="var(--road)" stroke-width="70" stroke-linecap="round"/>
+      </g>
+      <g id="car" transform="translate(470 560) scale(1.15)">
+        <ellipse cx="0" cy="2" rx="66" ry="9" fill="#000" opacity=".22"/>
+        <rect x="-54" y="-24" width="22" height="26" rx="6" fill="#1B1F24"/>
+        <rect x="32" y="-24" width="22" height="26" rx="6" fill="#1B1F24"/>
+        <path d="M-40 -64 L-30 -96 Q-27 -102 -20 -102 L20 -102 Q27 -102 30 -96 L40 -64 Z" fill="var(--car-shade)"/>
+        <path d="M-31 -68 L-24 -92 Q-22 -95 -18 -95 L18 -95 Q22 -95 24 -92 L31 -68 Z" fill="#7FA6C4" opacity=".85"/>
+        <rect x="-62" y="-68" width="124" height="50" rx="15" fill="var(--car)"/>
+        <rect x="-62" y="-36" width="124" height="10" fill="var(--car-shade)" opacity=".6"/>
+        <rect x="-56" y="-58" width="20" height="9" rx="4" fill="#E0353B"/>
+        <rect x="36" y="-58" width="20" height="9" rx="4" fill="#E0353B"/>
+        <rect x="-12" y="-62" width="24" height="24" rx="3" fill="#fff" stroke="#D7262E" stroke-width="1.5"/>
+        <path d="M-5 -57 V-43 H6" fill="none" stroke="#D7262E" stroke-width="4" stroke-linecap="square"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- ============ Package finder ============ -->
+  <section class="section alt" id="finder" aria-labelledby="finder-title">
+    <div class="wrap">
+      <div class="head center reveal">
+        <h2 id="finder-title">Which package is right for you?</h2>
+        <p>Tell us where you are and we’ll point you to the right course.</p>
+      </div>
+      <div class="finder reveal">
+        <fieldset>
+          <legend>Where are you on your driving journey?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="stage" value="new"><span>I’ve just got my learner permit</span></label>
+            <label class="choice"><input type="radio" name="stage" value="some"><span>I’ve done some EDT lessons</span></label>
+            <label class="choice"><input type="radio" name="stage" value="sponsor"><span>Someone will practise with me</span></label>
+            <label class="choice"><input type="radio" name="stage" value="test"><span>My driving test is coming up</span></label>
+          </div>
+        </fieldset>
+        <div class="test-q" id="test-q">
+          <div>
+            <fieldset>
+              <legend>Do you need a car for the test?</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="testcar" value="yes"><span>Yes, I’d like the school car</span></label>
+                <label class="choice"><input type="radio" name="testcar" value="no"><span>No, I’ll use my own car</span></label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="result waiting" id="result" aria-live="polite">
+          <span class="kicker" id="result-kicker">Your suggestion</span>
+          <h3 id="result-title">Pick an answer above</h3>
+          <p id="result-text">We’ll suggest a package, then you can ask for prices.</p>
+          <a class="btn btn-primary" id="result-cta" href="#contact" data-package="" hidden>Get prices</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Packages ============ -->
+  <section class="section" id="packages" aria-labelledby="packages-title">
+    <div class="wrap">
+      <div class="head center reveal">
+        <h2 id="packages-title">Lessons for every stage.</h2>
+        <p>Prices are sent on request, so your quote fits your package and area.</p>
+      </div>
+      <div class="seg-wrap reveal">
+        <div class="segmented" role="tablist" aria-label="Package types">
+          <button class="tab" role="tab" id="tab-edt" aria-controls="panel-edt" aria-selected="true">EDT lessons</button>
+          <button class="tab" role="tab" id="tab-pre" aria-controls="panel-pre" aria-selected="false" tabindex="-1">Pre-tests</button>
+          <button class="tab" role="tab" id="tab-hire" aria-controls="panel-hire" aria-selected="false" tabindex="-1">Test car hire</button>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-edt" role="tabpanel" aria-labelledby="tab-edt">
+        <div class="packages">
+          <article class="pkg"><div class="size">12<small>lessons</small></div><h3>Full EDT</h3><p>All twelve 1-hour Essential Driver Training lessons.</p><a class="link" href="#contact" data-package="edt-12">Get prices</a></article>
+          <article class="pkg"><div class="size">6<small>lessons</small></div><h3>Reduced EDT</h3><p>Six 1-hour EDT lessons, for learners part-way through.</p><a class="link" href="#contact" data-package="edt-6">Get prices</a></article>
+          <article class="pkg"><div class="size">1<small>lesson</small></div><h3>Pay as you go</h3><p>A single 1-hour EDT lesson, booked when it suits you.</p><a class="link" href="#contact" data-package="edt-1">Get prices</a></article>
+          <article class="pkg"><div class="size">20<small>lessons</small></div><h3>Sponsored EDT</h3><p>Twelve EDT lessons plus 8 sponsored lessons.</p><a class="link" href="#contact" data-package="edt-20">Get prices</a></article>
+        </div>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more</p>
+        <p class="note">Need an EDT logbook? <a class="link" href="#contact" data-package="logbook">Request yours</a></p>
+      </div>
+
+      <div class="panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" hidden>
+        <div class="packages">
+          <article class="pkg"><div class="size">1<small>hour</small></div><h3>One hour pre-test</h3><ul><li>Marking explained</li><li>Fault analysis and correction</li><li>Manoeuvre preparation</li><li>Test routes</li></ul><a class="link" href="#contact" data-package="pre-1">Get prices</a></article>
+          <article class="pkg"><div class="size">2<small>hours</small></div><h3>Two hour pre-test</h3><ul><li>Marking explained</li><li>Fault analysis and correction</li><li>Manoeuvre preparation</li><li>Test routes</li></ul><a class="link" href="#contact" data-package="pre-2">Get prices</a></article>
+          <article class="pkg"><div class="size">3<small>hours</small></div><h3>Three hour pre-test</h3><ul><li>Marking explained</li><li>Fault analysis and correction</li><li>Manoeuvre preparation</li><li>Test routes</li></ul><a class="link" href="#contact" data-package="pre-3">Get prices</a></article>
+        </div>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more</p>
+      </div>
+
+      <div class="panel" id="panel-hire" role="tabpanel" aria-labelledby="tab-hire" hidden>
+        <div class="packages">
+          <article class="pkg"><h3><span class="light green" aria-hidden="true"></span>Green</h3><p>The school car for your test, plus a one hour pre-test beforehand.</p><a class="link" href="#contact" data-package="hire-green">Get prices</a></article>
+          <article class="pkg"><h3><span class="light orange" aria-hidden="true"></span>Orange</h3><p>The school car for your test, plus a two hour pre-test beforehand.</p><a class="link" href="#contact" data-package="hire-orange">Get prices</a></article>
+          <article class="pkg"><h3><span class="light red" aria-hidden="true"></span>Red</h3><p>The school car for your test, plus a three hour pre-test beforehand.</p><a class="link" href="#contact" data-package="hire-red">Get prices</a></article>
+        </div>
+        <p class="swipe-hint" aria-hidden="true">Swipe to see more</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Route to the test ============ -->
+  <section class="section alt" aria-labelledby="route-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <h2 id="route-title">Your road to the test.</h2>
+        <p>Every learner in Ireland follows the same route. Here’s where we help along the way.</p>
+      </div>
+      <ol class="route">
+        <li><span class="dot">1</span><div><h3>Learner permit</h3><p>Get your permit, then book your first lesson.</p></div></li>
+        <li><span class="dot">2</span><div><h3>EDT logbook</h3><p>Get the logbook your lessons are recorded in.</p></div></li>
+        <li><span class="dot">3</span><div><h3>12 EDT lessons</h3><p>Each lesson is signed off as you complete it.</p></div></li>
+        <li><span class="dot">4</span><div><h3>Pre-test</h3><p>A mock test, fault correction and local test routes.</p></div></li>
+        <li><span class="dot">5</span><div><h3>Test day</h3><p>Hire the school car you’ve practised in.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="contact-head">
+          <h2 id="contact-title">Let’s get you on the road.</h2>
+          <p>Send an enquiry and you’ll get a reply with prices and available times. Prefer to talk? Call or message on WhatsApp.</p>
+        </div>
+        <dl class="details">
+          <div><dt>Area</dt><dd>Pottery Road, Dún Laoghaire, and <a class="link" href="/locations">surrounding areas</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+353892384321">089 238 4321</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/353892384321?text=Hi%2C%20I%27m%20interested%20in%20driving%20lessons" rel="noopener">Message on WhatsApp</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:hello@roaddrivingschool.ie">hello@roaddrivingschool.ie</a></dd></div>
+          <div><dt>Hours</dt><dd>Monday to Saturday. Closed Sunday.</dd></div>
+        </dl>
+      </div>
+
+      <!-- On Netlify, data-netlify="true" makes this form work with no server code -->
+      <form class="enquiry reveal" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+          <span class="error" id="e-name"></span>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone number</label>
+          <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+          <span class="error" id="e-phone"></span>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="hint">(optional)</span></label>
+          <input type="email" id="f-email" name="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-package">What are you interested in?</label>
+          <select id="f-package" name="package">
+            <option value="">Not sure yet</option>
+            <optgroup label="EDT lessons">
+              <option value="edt-12">Full EDT (12 lessons)</option>
+              <option value="edt-6">Reduced EDT (6 lessons)</option>
+              <option value="edt-1">Pay as you go (1 lesson)</option>
+              <option value="edt-20">Sponsored EDT (20 lessons)</option>
+              <option value="logbook">EDT logbook</option>
+            </optgroup>
+            <optgroup label="Pre-tests">
+              <option value="pre-1">One hour pre-test</option>
+              <option value="pre-2">Two hour pre-test</option>
+              <option value="pre-3">Three hour pre-test</option>
+            </optgroup>
+            <optgroup label="Test car hire">
+              <option value="hire-green">Green: car hire + 1 hour pre-test</option>
+              <option value="hire-orange">Orange: car hire + 2 hour pre-test</option>
+              <option value="hire-red">Red: car hire + 3 hour pre-test</option>
+            </optgroup>
+          </select>
+        </div>
+        <fieldset class="field">
+          <legend>Whose car will you learn in?</legend>
+          <div class="radio-row">
+            <label class="choice"><input type="radio" name="car" value="school" checked><span>The school car</span></label>
+            <label class="choice"><input type="radio" name="car" value="own"><span>My own car</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="f-msg">Anything else? <span class="hint">(optional)</span></label>
+          <textarea id="f-msg" name="message" placeholder="Your area, test date, or times that suit you"></textarea>
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" id="f-consent" required>
+          <span>I agree that ROAD Driving School can use these details to reply to my enquiry, as set out in the <a class="link" href="/privacy">privacy notice</a> and <a class="link" href="/terms-conditions">terms and conditions</a>.</span>
+        </label>
+        <span class="error" id="e-consent"></span>
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <div class="form-status" id="form-status" role="status" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div><strong>ROAD Driving School</strong><p>Pottery Road, Dún Laoghaire, County Dublin</p><p>RSA Approved Driving Instructor</p></div>
+    <div><strong>Lessons</strong><ul><li><a href="/driving-lessons">EDT lessons</a></li><li><a href="/pre-test-lessons">Pre-tests</a></li><li><a href="/test-car-hire">Test car hire</a></li><li><a href="/gift-vouchers">Gift vouchers</a></li></ul></div>
+    <div><strong>Follow</strong><ul><li><a href="https://www.instagram.com/roaddrivingschool/" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/ROADDublin/" rel="noopener">Facebook</a></li><li><a href="/terms-conditions">Terms and conditions</a></li></ul></div>
+    <div><p>© 2026 ROAD Driving School</p></div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary" href="tel:+353892384321">Call</a>
+  <a class="btn wa" href="https://wa.me/353892384321?text=Hi%2C%20I%27m%20interested%20in%20driving%20lessons" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function () {
+  var motion = document.documentElement.classList.contains('motion');
+
+  /* ---------- Mobile menu ---------- */
+  var toggle = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.textContent = open ? 'Close' : 'Menu';
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = 'Menu'; }
+  });
+
+  /* ---------- Road scene: perspective road + car that drives as you scroll ---------- */
+  var centre = document.getElementById('centre');
+  var L = centre.getTotalLength();
+  var NEAR = 250, FAR = 0.05; // road width at the bottom, and how much it narrows towards the horizon
+  function widthAt(t) { return NEAR * (1 - (1 - FAR) * t); }
+  function frame(t) {
+    var s = Math.max(0, Math.min(L, t * L));
+    var a = centre.getPointAtLength(Math.max(0, s - 1)), b = centre.getPointAtLength(Math.min(L, s + 1));
+    var dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1;
+    var p = centre.getPointAtLength(s);
+    return { x: p.x, y: p.y, nx: dy / len, ny: -dx / len }; // (nx, ny) points to the driver's left
+  }
+  function ribbon(scale) {
+    var left = [], right = [], N = 140;
+    for (var i = 0; i <= N; i++) {
+      var t = i / N, f = frame(t), w = widthAt(t) * scale / 2;
+      left.push((f.x + f.nx * w).toFixed(1) + ' ' + (f.y + f.ny * w).toFixed(1));
+      right.push((f.x - f.nx * w).toFixed(1) + ' ' + (f.y - f.ny * w).toFixed(1));
+    }
+    return 'M' + left.join(' L') + ' L' + right.reverse().join(' L') + ' Z';
+  }
+  document.getElementById('verge').setAttribute('d', ribbon(1.16));
+  document.getElementById('roadSurface').setAttribute('d', ribbon(1));
+  var dashes = '', t = 0;
+  while (t < 0.97) {
+    var step = 0.05 * (1 - 0.8 * t), t2 = t + step * 0.5;
+    var f1 = frame(t), f2 = frame(t2), w1 = widthAt(t) * 0.018, w2 = widthAt(t2) * 0.018;
+    dashes += 'M' + (f1.x + f1.nx * w1) + ' ' + (f1.y + f1.ny * w1) + ' L' + (f2.x + f2.nx * w2) + ' ' + (f2.y + f2.ny * w2) +
+              ' L' + (f2.x - f2.nx * w2) + ' ' + (f2.y - f2.ny * w2) + ' L' + (f1.x - f1.nx * w1) + ' ' + (f1.y - f1.ny * w1) + ' Z ';
+    t += step;
+  }
+  document.getElementById('roadDashes').setAttribute('d', dashes);
+  centre.style.display = 'none';
+
+  var car = document.getElementById('car');
+  var scene = document.querySelector('.scene');
+  function placeCar(t) {
+    var f = frame(t), w = widthAt(t);
+    var lane = w * 0.25;                       // keep left: Irish roads
+    var scale = (w * 0.42) / 124;              // car fills most of its lane
+    car.setAttribute('transform', 'translate(' + (f.x + f.nx * lane).toFixed(1) + ' ' + (f.y + f.ny * lane).toFixed(1) + ') scale(' + scale.toFixed(3) + ')');
+  }
+  var START = 0.3;
+  placeCar(START);
+  if (motion) {
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () {
+        var hero = document.querySelector('.hero');
+        var p = Math.max(0, Math.min(1, scrollY / (hero.offsetHeight * 0.85)));
+        placeCar(START + p * 0.55);
+        ticking = false;
+      });
+    }
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ---------- Hero words: light up one at a time ---------- */
+  if (motion) {
+    var h1 = document.getElementById('hero-title');
+    var words = h1.querySelectorAll('.word');
+    var desc = document.getElementById('hero-desc');
+    var lines = [
+      'Standards never drop, from your first lesson to your last.',
+      'Lessons scheduled around you and logged in your EDT logbook.',
+      'A course for every stage, from first lesson to pre-test.',
+      'Real time behind the wheel, in a safe and professional car.'
+    ];
+    var w = 0;
+    function show(i) {
+      words.forEach(function (el, k) { el.classList.toggle('on', k === i); });
+      desc.classList.add('swap');
+      setTimeout(function () { desc.textContent = lines[i]; desc.classList.remove('swap'); }, 350);
+    }
+    setTimeout(function () {
+      h1.classList.add('cycling'); show(0);
+      setInterval(function () { if (!document.hidden) { w = (w + 1) % words.length; show(w); } }, 3200);
+    }, 1500);
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal, .route li').forEach(function (el, i) {
+    if (!motion) { el.classList.add('in'); return; }
+    if (el.matches('.route li')) el.style.transitionDelay = (Array.prototype.indexOf.call(el.parentNode.children, el) * 0.15) + 's';
+    io.observe(el);
+  });
+
+  /* ---------- "Get prices" preselects the package ---------- */
+  var select = document.getElementById('f-package');
+  function choosePackage(pkg) {
+    if (!pkg) return;
+    select.value = pkg;
+    var url = new URL(location.href);
+    url.searchParams.set('package', pkg);
+    history.replaceState(null, '', url.pathname + url.search + '#contact');
+  }
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[data-package]');
+    if (link) choosePackage(link.dataset.package);
+  });
+  var fromUrl = new URLSearchParams(location.search).get('package');
+  if (fromUrl && select.querySelector('option[value="' + CSS.escape(fromUrl) + '"]')) select.value = fromUrl;
+
+  /* ---------- Package finder ---------- */
+  var results = {
+    'new': ['Full EDT', 'All twelve EDT lessons, starting from lesson one. This is the course most new learners need.', 'edt-12'],
+    'some': ['Reduced EDT', 'Pick up where you left off with six lessons, or book pay as you go lessons for the ones you have left.', 'edt-6'],
+    'sponsor': ['Sponsored EDT', 'Your twelve EDT lessons plus 8 sponsored lessons, to make the most of practice in between.', 'edt-20'],
+    'test-yes': ['Test car hire', 'Green, Orange or Red: the school car for your test, with a 1, 2 or 3 hour pre-test beforehand.', 'hire-green'],
+    'test-no': ['Pre-test lessons', 'A 1, 2 or 3 hour pre-test covering the marking sheet, fault correction, manoeuvres and test routes.', 'pre-2']
+  };
+  var testQ = document.getElementById('test-q');
+  var result = document.getElementById('result');
+  var cta = document.getElementById('result-cta');
+  function updateFinder() {
+    var stage = document.querySelector('input[name="stage"]:checked');
+    if (!stage) return;
+    var isTest = stage.value === 'test';
+    testQ.classList.toggle('show', isTest);
+    var key = stage.value;
+    if (isTest) {
+      var car = document.querySelector('input[name="testcar"]:checked');
+      if (!car) {
+        result.classList.add('waiting'); cta.hidden = true;
+        document.getElementById('result-title').textContent = 'One more question';
+        document.getElementById('result-text').textContent = 'Let us know if you need a car for the test.';
+        return;
+      }
+      key = 'test-' + car.value;
+    }
+    var r = results[key];
+    document.getElementById('result-title').textContent = r[0];
+    document.getElementById('result-text').textContent = r[1];
+    cta.dataset.package = r[2];
+    cta.hidden = false;
+    result.classList.remove('waiting');
+  }
+  document.querySelectorAll('#finder input').forEach(function (i) { i.addEventListener('change', updateFinder); });
+
+  /* ---------- Segmented tabs ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function activate(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { activate(tab, false); });
+    tab.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') activate(tabs[(i + 1) % tabs.length], true);
+      if (e.key === 'ArrowLeft') activate(tabs[(i - 1 + tabs.length) % tabs.length], true);
+    });
+  });
+
+  /* ---------- Enquiry form ---------- */
+  var form = document.querySelector('form.enquiry');
+  var status = document.getElementById('form-status');
+  function setError(id, msg) { document.getElementById(id).textContent = msg; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = form.elements;
+    var nameOk = f.namedItem('name').value.trim() !== '';
+    var phoneOk = f.namedItem('phone').value.replace(/\D/g, '').length >= 7;
+    var consentOk = f.namedItem('consent').checked;
+    setError('e-name', nameOk ? '' : 'Enter your name so we know who to reply to.');
+    setError('e-phone', phoneOk ? '' : 'Enter a phone number, for example 089 123 4567.');
+    setError('e-consent', consentOk ? '' : 'Tick the box to agree, so we can reply to you.');
+    if (!nameOk || !phoneOk || !consentOk) {
+      document.getElementById(!nameOk ? 'f-name' : !phoneOk ? 'f-phone' : 'f-consent').focus();
+      return;
+    }
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+      .then(function (res) {
+        if (!res.ok) throw new Error();
+        status.className = 'form-status ok';
+        status.textContent = 'Enquiry sent. You’ll get a reply with prices and times shortly.';
+        form.reset();
+      })
+      .catch(function () {
+        status.className = 'form-status fail';
+        status.textContent = 'Your enquiry didn’t send. Call 089 238 4321 or message on WhatsApp instead.';
+      })
+      .finally(function () { status.hidden = false; });
+  });
+})();
+</script>
+</body>
+</html>
